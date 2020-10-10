@@ -9,9 +9,9 @@ void draw()
   background(0);
   int total = 0;
   total = 0;
-  for (int x = 10; x <= 510; x += 62)
+  for (int x = 0; x <= 510; x += 50)
     {
-      for (int y = 10; y <= 485; y += 62)
+      for (int y = 0; y <= 485; y += 50)
       { 
         Die bob = new Die(y, x);
         bob.show();
@@ -46,31 +46,31 @@ class Die // single
     {fill ((int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100));
     rect(myX, myY, 50, 50, 10);
     fill(0);
-    ellipse(25 + myX , 25 + myY, 8, 8);
+    ellipse(25 + myX , 25 + myY, 12, 12);
     } else if (roll == 2)
     {
      fill ((int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100));
      rect(myX, myY, 50, 50, 10);
      fill(0);
-     ellipse(35 + myX, 15 + myY, 8, 8);
-     ellipse(15 + myX, 35 + myY, 8, 8);
+     ellipse(35 + myX, 15 + myY, 11, 11);
+     ellipse(15 + myX, 35 + myY, 11, 11);
     } else if (roll == 3)
     {
       fill((int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100));
       rect(myX, myY, 50, 50, 10);
       fill(0);
-      ellipse(35 + myX, 15 + myY, 8, 8);
-      ellipse(25 + myX, 25 + myY, 8, 8);
-      ellipse(15 + myX, 35 + myY, 8, 8);
+      ellipse(35 + myX, 15 + myY, 10, 10);
+      ellipse(25 + myX, 25 + myY, 10, 10);
+      ellipse(15 + myX, 35 + myY, 10, 10);
     } else if (roll == 4)
     {
        fill((int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100));
        rect(myX, myY, 50, 50, 10);
        fill(0);
-       ellipse(35 + myX, 15 + myY, 8, 8);
-       ellipse(15 + myX, 35 + myY, 8, 8);
-       ellipse(15 + myX, 15 + myY, 8, 8);
-       ellipse(35 + myX, 35 + myY, 8, 8);
+       ellipse(35 + myX, 15 + myY, 9, 9);
+       ellipse(15 + myX, 35 + myY, 9, 9);
+       ellipse(15 + myX, 15 + myY, 9, 9);
+       ellipse(35 + myX, 35 + myY, 9, 9);
     } else if (roll == 5)
   {
     fill((int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100));
@@ -85,12 +85,12 @@ class Die // single
      fill((int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100), (int) (Math.random() * 155 + 100));
        rect(myX, myY, 50, 50, 10);
        fill(0);
-       ellipse(15 + myX, 15 +myY, 8, 8);
-       ellipse(15 + myX, 25 +myY, 8, 8);
-       ellipse(15 + myX, 35 +myY, 8, 8);
-       ellipse(35 + myX, 15 +myY, 8, 8);
-       ellipse(35 + myX, 25 +myY, 8, 8);
-       ellipse(35 + myX, 35 +myY, 8, 8);
+       ellipse(15 + myX, 15 +myY, 7, 7);
+       ellipse(15 + myX, 25 +myY, 7, 7);
+       ellipse(15 + myX, 35 +myY, 7, 7);
+       ellipse(35 + myX, 15 +myY, 7, 7);
+       ellipse(35 + myX, 25 +myY, 7, 7);
+       ellipse(35 + myX, 35 +myY, 7, 7);
   }
   }
 }
